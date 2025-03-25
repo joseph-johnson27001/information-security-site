@@ -2,12 +2,11 @@
   <div id="app">
     <SideBar />
     <div id="main">
-      <TopNav />
+      <!-- <TopNav /> -->
+      <TopCard />
 
-      <div class="content-container">
-        <div class="content">
-          <router-view></router-view>
-        </div>
+      <div class="content">
+        <router-view></router-view>
       </div>
     </div>
   </div>
@@ -15,13 +14,15 @@
 
 <script>
 import SideBar from "./components/Navigation/SideBar.vue";
-import TopNav from "./components/Navigation/TopNav.vue";
+// import TopNav from "./components/Navigation/TopNav.vue";
+import TopCard from "./components/UI/TopCard.vue";
 
 export default {
   name: "App",
   components: {
     SideBar,
-    TopNav,
+    // TopNav,
+    TopCard,
   },
 };
 </script>
@@ -43,36 +44,34 @@ body {
   flex-direction: row;
   height: 100dvh;
   width: 100%;
+  background-color: #f8f7fa;
 }
 
 #main {
   flex-grow: 1;
   width: 100%;
-}
 
-.content-container {
-  font-family: Epilogue, "TT Norms Pro", sans-serif;
-  width: 100%;
-  height: 100%;
-  color: rgb(25, 25, 25);
-  padding: 15px;
-  overflow-y: scroll;
-  box-sizing: border-box;
-  background-color: whitesmoke;
+  padding: 20px;
+  margin-bottom: 75px;
 }
 
 .content {
-  background-color: #fff;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  height: 100%;
+  font-family: "Inter";
   width: 100%;
+  height: 100%;
+  color: rgb(25, 25, 25);
+  overflow-y: scroll;
   box-sizing: border-box;
-  padding: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-top: 20px;
 }
 
 .heading {
-  font-family: "Assistant";
+  font-family: "Inter";
   color: rgb(255, 87, 34);
   font-size: 30px;
   font-weight: 700px;
