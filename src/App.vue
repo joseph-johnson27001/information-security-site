@@ -3,7 +3,11 @@
     <SideBar />
     <div id="main">
       <TopNav />
-      <div class="content"></div>
+      <!-- This is where the routed components will appear -->
+      <div class="content">
+        <router-view></router-view>
+        <!-- Router view goes here -->
+      </div>
     </div>
   </div>
 </template>

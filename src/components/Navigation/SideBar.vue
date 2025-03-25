@@ -12,10 +12,17 @@
           active: activeItem === item.name,
           'logout-item': item.name === 'logout',
         }"
-        @click="setActive(item.name)"
       >
-        <i :class="item.icon"></i>
-        <span v-if="!collapsed">{{ item.label }}</span>
+        <router-link
+          :to="item.path"
+          class="sidebar-link"
+          @click="setActive(item.name)"
+        >
+          <div class="icon-container">
+            <i :class="item.icon"></i>
+          </div>
+          <span v-if="!collapsed">{{ item.label }}</span>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -26,51 +33,69 @@ export default {
   name: "SideBar",
   data() {
     return {
-      activeItem: "whatisinfosec", // default active item
+      activeItem: "whatisinfosec",
       collapsed: false,
       menuItems: [
         {
           name: "whatisinfosec",
           label: "What is InfoSec",
           icon: "fas fa-question-circle",
+          path: "/",
         },
         {
           name: "physicalsecurity",
           label: "Physical Security Aspects",
           icon: "fas fa-lock",
+          path: "/physicalsecurity",
         },
         {
           name: "confidentialmeetings",
           label: "Confidential Meetings",
           icon: "fas fa-users",
+          path: "/confidentialmeetings",
         },
         {
           name: "handlinginfo",
           label: "Handling Information",
           icon: "fas fa-file-alt",
+          path: "/handlinginfo",
         },
         {
           name: "usingemail",
           label: "Using Company Email",
           icon: "fas fa-envelope",
+          path: "/usingemail",
         },
-        { name: "usingit", label: "Using IT", icon: "fas fa-laptop" },
+        {
+          name: "usingit",
+          label: "Using IT",
+          icon: "fas fa-laptop",
+          path: "/usingit",
+        },
         {
           name: "awayfromoffice",
           label: "Away from the Office",
           icon: "fas fa-road",
+          path: "/awayfromoffice",
         },
         {
           name: "reportingincidents",
           label: "Reporting Incidents",
           icon: "fas fa-exclamation-triangle",
+          path: "/reportingincidents",
         },
         {
           name: "buyemailcertificate",
           label: "Buy & Email a Certificate",
           icon: "fas fa-certificate",
+          path: "/buyemailcertificate",
         },
-        { name: "logout", label: "Logout", icon: "fas fa-sign-out-alt" },
+        {
+          name: "logout",
+          label: "Logout",
+          icon: "fas fa-sign-out-alt",
+          path: "/logout",
+        },
       ],
     };
   },
@@ -137,7 +162,7 @@ export default {
 }
 
 .sidebar ul li {
-  padding: 20px 10px;
+  padding: 15px 10px;
   cursor: pointer;
   border-radius: 5px;
   margin: 4px 7px;
@@ -152,12 +177,9 @@ export default {
   transition: color 0.3s ease;
 }
 
-.sidebar ul li.logout-item:hover i {
-  color: #ff4d4f;
-}
-
 .sidebar ul li.active {
   background: linear-gradient(270deg, rgba(255, 140, 0, 0.7), rgb(255, 87, 34));
+  color: white;
 }
 
 .sidebar ul li i {
@@ -179,6 +201,33 @@ export default {
   margin: 0;
   padding: 10px;
   font-size: 18px;
+}
+
+/* Icon container */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-container i {
+  font-size: 18px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-link:hover {
+  color: inherit;
 }
 
 @media (max-width: 699px) {
