@@ -128,8 +128,8 @@
 }
 
 .online-indicator {
-  width: 11px;
-  height: 11px;
+  width: 8px;
+  height: 8px;
   background: #28c76f;
   border-radius: 50%;
   position: absolute;

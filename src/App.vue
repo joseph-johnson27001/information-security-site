@@ -3,10 +3,9 @@
     <SideBar />
     <div id="main">
       <TopNav />
-      <!-- This is where the routed components will appear -->
+
       <div class="content">
         <router-view></router-view>
-        <!-- Router view goes here -->
       </div>
     </div>
   </div>
@@ -41,18 +40,34 @@ body {
   display: flex;
   flex-direction: row;
   height: 100dvh;
-  width: 100dvw;
+  width: 100%;
 }
 
 #main {
   flex-grow: 1;
+  width: 100%;
 }
 
 .content {
-  color: #333;
+  font-family: Epilogue, "TT Norms Pro", sans-serif;
   width: 100%;
   height: 100%;
+  color: rgb(25, 25, 25);
+  padding: 20px;
+  overflow-y: scroll;
+  box-sizing: border-box;
   background-color: #fff;
-  padding: 10px;
+}
+
+.heading {
+  font-family: "Assistant";
+  color: rgb(255, 87, 34);
+  font-size: 30px;
+  font-weight: 700px;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(85, 85, 85);
 }
 </style>

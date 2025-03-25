@@ -12,17 +12,12 @@
           active: activeItem === item.name,
           'logout-item': item.name === 'logout',
         }"
+        @click="navigateTo(item)"
       >
-        <router-link
-          :to="item.path"
-          class="sidebar-link"
-          @click="setActive(item.name)"
-        >
-          <div class="icon-container">
-            <i :class="item.icon"></i>
-          </div>
-          <span v-if="!collapsed">{{ item.label }}</span>
-        </router-link>
+        <div class="icon-container">
+          <i :class="item.icon"></i>
+        </div>
+        <span v-if="!collapsed">{{ item.label }}</span>
       </li>
     </ul>
   </div>
@@ -86,7 +81,7 @@ export default {
         },
         {
           name: "buyemailcertificate",
-          label: "Buy & Email a Certificate",
+          label: "Buy & Email Certificate",
           icon: "fas fa-certificate",
           path: "/buyemailcertificate",
         },
@@ -100,8 +95,9 @@ export default {
     };
   },
   methods: {
-    setActive(item) {
-      this.activeItem = item;
+    navigateTo(item) {
+      this.activeItem = item.name;
+      this.$router.push(item.path);
     },
     toggleCollapse() {
       this.collapsed = !this.collapsed;
@@ -112,13 +108,12 @@ export default {
 
 <style scoped>
 .sidebar {
-  width: 240px;
+  width: 300px;
   background-color: #25293c;
   color: #fff;
   min-height: 100%;
   max-height: 100vh;
   padding-top: 20px;
-  position: relative;
   z-index: 10;
   font-size: 15px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -127,11 +122,10 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   transition: width 0.3s ease;
-  overflow-y: scroll;
 }
 
 .sidebar.collapsed {
-  width: 80px;
+  width: 90px;
   padding-top: 30px;
 }
 
@@ -173,6 +167,10 @@ export default {
   white-space: nowrap;
 }
 
+.sidebar ul li:hover {
+  background-color: rgba(193, 191, 214, 0.2);
+}
+
 .sidebar ul li.logout-item {
   margin-top: auto;
   transition: color 0.3s ease;
@@ -198,12 +196,6 @@ export default {
   justify-content: center;
 }
 
-.sidebar.collapsed a.sidebar-link {
-  display: flex;
-  justify-content: center;
-  margin-right: 0;
-}
-
 .sidebar.collapsed ul li i {
   margin: 0;
   padding: 10px;
@@ -220,19 +212,6 @@ export default {
 
 .icon-container i {
   font-size: 18px;
-}
-
-.sidebar-link {
-  display: flex;
-  align-items: center;
-  color: inherit;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-}
-
-.sidebar-link:hover {
-  color: inherit;
 }
 
 @media (max-width: 699px) {
