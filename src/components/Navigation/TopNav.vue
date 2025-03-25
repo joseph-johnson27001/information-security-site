@@ -36,7 +36,6 @@
 <style scoped>
 .top-nav {
   background-color: #25293c;
-  color: #c1bfd6;
   height: 60px;
   width: 100%;
   display: flex;

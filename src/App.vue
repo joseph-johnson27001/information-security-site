@@ -4,8 +4,10 @@
     <div id="main">
       <TopNav />
 
-      <div class="content">
-        <router-view></router-view>
+      <div class="content-container">
+        <div class="content">
+          <router-view></router-view>
+        </div>
       </div>
     </div>
   </div>
@@ -48,15 +50,25 @@ body {
   width: 100%;
 }
 
-.content {
+.content-container {
   font-family: Epilogue, "TT Norms Pro", sans-serif;
   width: 100%;
   height: 100%;
   color: rgb(25, 25, 25);
-  padding: 20px;
+  padding: 15px;
   overflow-y: scroll;
   box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+.content {
   background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
 }
 
 .heading {
