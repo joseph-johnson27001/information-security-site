@@ -49,8 +49,10 @@ body {
 }
 
 .content {
+  color: #333;
   width: 100%;
   height: 100%;
-  background-color: whitesmoke;
+  background-color: #fff;
+  padding: 10px;
 }
 </style>

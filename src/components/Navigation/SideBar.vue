@@ -112,7 +112,7 @@ export default {
 
 <style scoped>
 .sidebar {
-  width: 260px;
+  width: 240px;
   background-color: #25293c;
   color: #fff;
   min-height: 100%;
@@ -159,6 +159,7 @@ export default {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .sidebar ul li {
@@ -197,18 +198,22 @@ export default {
   justify-content: center;
 }
 
+.sidebar.collapsed a.sidebar-link {
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+}
+
 .sidebar.collapsed ul li i {
   margin: 0;
   padding: 10px;
   font-size: 18px;
 }
 
-/* Icon container */
 .icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 5px;
   width: 30px;
   height: 30px;
 }
