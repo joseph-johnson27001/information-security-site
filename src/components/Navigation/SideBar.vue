@@ -125,7 +125,7 @@ export default {
 }
 
 .sidebar.collapsed {
-  width: 90px;
+  width: 80px;
   padding-top: 30px;
 }
 

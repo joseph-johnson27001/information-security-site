@@ -50,9 +50,8 @@ body {
 #main {
   flex-grow: 1;
   width: 100%;
-
-  padding: 20px;
-  margin-bottom: 75px;
+  padding: 15px;
+  margin-bottom: 65px;
 }
 
 .content {
@@ -67,7 +66,7 @@ body {
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .heading {
