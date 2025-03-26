@@ -108,7 +108,7 @@ li {
   display: flex;
   align-items: flex-start;
   background: #ffffff;
-  padding: 15px;
+  padding: 20px;
   border-radius: 12px;
   border: 1px solid #ddd;
   flex: 1;

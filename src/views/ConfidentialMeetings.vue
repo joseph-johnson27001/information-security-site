@@ -2,6 +2,24 @@
   <div class="info-page">
     <div class="heading">{{ title }}</div>
 
+    <!-- Introduction -->
+    <section class="intro-section">
+      <div class="intro-card-container">
+        <div class="card">
+          <div class="card-content">
+            <p>
+              Confidential meetings are crucial for protecting sensitive
+              information within an organization. Whether it's a strategic
+              planning session or a sensitive negotiation, maintaining
+              confidentiality ensures that business operations remain secure and
+              that proprietary information stays protected from external
+              threats.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Best Practices -->
     <section class="practices-section">
       <div class="card-container">
