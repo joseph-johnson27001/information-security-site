@@ -26,7 +26,7 @@ export default {
 <style>
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Exo 2", sans-serif;
   scrollbar-width: none;
   overflow-y: hidden;
 }
@@ -59,24 +59,28 @@ body {
 }
 
 .heading {
-  font-family: "Assistant";
+  font-family: "Exo 2", sans-serif;
   font-size: 30px;
   font-weight: 700px;
-  margin: 20px 0;
+  margin: 20px 2px;
 }
 
 h2 {
-  font-family: "Assistant";
+  font-family: "Exo 2", sans-serif;
   color: #333;
   font-size: 22px;
   font-weight: 400;
 }
 
 h3 {
-  font-family: "Assistant";
-  font-size: 20px;
-  color: rgb(25, 25, 25);
-  margin-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+strong {
+  font-family: "Exo 2", sans-serif;
 }
 
 p {

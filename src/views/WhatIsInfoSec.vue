@@ -25,7 +25,7 @@
             <i :class="principle.icon" :style="{ color: principle.bgDark }"></i>
           </div>
           <div class="card-content">
-            <strong>{{ principle.name }}</strong>
+            <h3>{{ principle.name }}</h3>
             <p>{{ principle.description }}</p>
           </div>
         </div>
@@ -35,8 +35,23 @@
     <!-- Example Scenarios -->
     <section class="scenarios-section">
       <div class="card-container">
-        <div class="card" v-for="scenario in scenarios" :key="scenario.name">
-          <p>{{ scenario.description }}</p>
+        <div
+          class="card scenario-card"
+          v-for="(scenario, index) in scenarios"
+          :key="scenario.description"
+        >
+          <!-- Adding random images to the scenario cards -->
+          <div class="scenario-image-container">
+            <img
+              :src="`https://picsum.photos/500/300?random=${index}`"
+              alt="Random Image"
+              class="scenario-image"
+            />
+          </div>
+
+          <div class="card-content">
+            <p>{{ scenario.description }}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -101,7 +116,6 @@ export default {
 
 .card {
   display: flex;
-  font-family: "Inter";
   align-items: center;
   background: #ffffff;
   padding: 20px;
@@ -113,10 +127,13 @@ export default {
   margin-bottom: 10px;
 }
 
-/* Icon Container */
+.card p {
+  margin: 5px 0;
+}
+
 .icon-container {
-  width: 60px;
-  height: 60px;
+  min-width: 50px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,6 +157,40 @@ export default {
   line-height: 1.6;
 }
 
+.scenario-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  flex: 1;
+  min-width: 280px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.scenario-image-container {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 15px;
+}
+
+.scenario-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Container Styles */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .card-container {
@@ -148,6 +199,10 @@ export default {
   }
 
   .card {
+    min-width: 100%;
+  }
+
+  .scenario-card {
     min-width: 100%;
   }
 }
