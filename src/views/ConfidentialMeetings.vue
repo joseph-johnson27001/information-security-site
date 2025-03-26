@@ -135,7 +135,7 @@ export default {
 
 <style scoped>
 .card-container {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .story-section .card {
