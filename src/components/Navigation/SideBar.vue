@@ -73,18 +73,18 @@ export default {
           icon: "fas fa-road",
           path: "/awayfromoffice",
         },
-        {
-          name: "reportingincidents",
-          label: "Reporting Incidents",
-          icon: "fas fa-exclamation-triangle",
-          path: "/reportingincidents",
-        },
-        {
-          name: "buyemailcertificate",
-          label: "Buy & Email Certificate",
-          icon: "fas fa-certificate",
-          path: "/buyemailcertificate",
-        },
+        // {
+        //   name: "reportingincidents",
+        //   label: "Reporting Incidents",
+        //   icon: "fas fa-exclamation-triangle",
+        //   path: "/reportingincidents",
+        // },
+        // {
+        //   name: "buyemailcertificate",
+        //   label: "Buy & Email Certificate",
+        //   icon: "fas fa-certificate",
+        //   path: "/buyemailcertificate",
+        // },
         {
           name: "logout",
           label: "Logout",
