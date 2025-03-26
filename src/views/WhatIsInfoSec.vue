@@ -54,6 +54,40 @@
         </div>
       </div>
     </section>
+
+    <!-- Example Scenarios -->
+    <section class="info-scenarios-section">
+      <h2>Real-World Examples</h2>
+
+      <div class="info-example-card">
+        <h3>Confidentiality</h3>
+        <p>
+          Sally confided in her manager about her mother's health condition,
+          expecting it to remain private. However, due to mishandling of
+          sensitive information, the details became widely known at work,
+          violating confidentiality principles.
+        </p>
+      </div>
+
+      <div class="info-example-card">
+        <h3>Integrity</h3>
+        <p>
+          In 2003, an Education Minister blamed a computer virus for incorrect
+          student exam results, demonstrating how data integrity failures can
+          impact institutions and individuals.
+        </p>
+      </div>
+
+      <div class="info-example-card">
+        <h3>Availability</h3>
+        <p>
+          Wolfgang was working on a critical project while traveling. When his
+          laptop was stolen, his encrypted files remained confidential, but
+          since he had no backup, crucial data was lost—causing costly delays
+          and penalties.
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 
