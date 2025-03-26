@@ -1,10 +1,8 @@
 <template>
   <div class="top-card">
     <!-- Left Section (Search) -->
-    <div class="search-area">
-      <i class="fas fa-search"></i>
-      <i class="fas fa-bars" @click="openMobileNav"></i>
-      <input type="text" placeholder="Search..." />
+    <div class="button-container">
+      <button>Take Test</button>
     </div>
 
     <!-- Right Section (Icons & Profile) -->
@@ -47,24 +45,20 @@ export default {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.search-area {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.search-area i {
-  margin-right: 10px;
-  color: #555;
-}
-
-.search-area input {
-  flex-grow: 1;
+.button-container button {
+  font-family: "Exo 2", sans-serif;
+  padding: 15px;
+  background-color: #28c76f;
+  color: #fff;
   border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.button-container button:focus {
   outline: none;
-  font-size: 16px;
-  background: none;
-  font-family: "Inter", sans-serif;
 }
 
 .icon-area {
