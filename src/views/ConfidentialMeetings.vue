@@ -47,7 +47,7 @@
       <div class="card">
         <div class="story-image-container">
           <img
-            src="laptop-train.jpg"
+            src="conference.jpg"
             alt="Glass Meeting Room"
             class="story-image"
           />

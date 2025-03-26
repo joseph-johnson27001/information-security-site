@@ -43,7 +43,7 @@
       <div class="card">
         <div class="story-image-container">
           <!-- Add a photo for the story -->
-          <img src="exam-results.jpg" alt="Story image" class="story-image" />
+          <img src="resigned.jpg" alt="Story image" class="story-image" />
         </div>
         <div class="story-text">
           <p v-for="paragraph in story" :key="paragraph">{{ paragraph }}</p>
