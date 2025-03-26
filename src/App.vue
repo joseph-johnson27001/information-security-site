@@ -90,7 +90,7 @@ ul {
 
 li {
   list-style: none;
-  margin-left: -30px;
+  margin-left: -40px;
 }
 
 .card-container {
