@@ -152,7 +152,7 @@ export default {
   object-fit: cover;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .card-container {
     grid-template-columns: 1fr;
   }

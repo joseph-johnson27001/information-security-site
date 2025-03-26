@@ -164,13 +164,16 @@ export default {
   overflow: hidden;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .card-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
   .story-section .card {
     flex-direction: column;
     align-items: flex-start;

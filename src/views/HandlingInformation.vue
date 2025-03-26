@@ -144,9 +144,7 @@ export default {
   .card-container {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 1100px) {
   .story-section .card {
     flex-direction: column;
     align-items: flex-start;
