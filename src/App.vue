@@ -59,20 +59,17 @@ body {
 }
 
 .heading {
-  font-family: "Inter";
-  color: #333;
+  font-family: "Assistant";
   font-size: 30px;
   font-weight: 700px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 h2 {
   font-family: "Inter";
-  color: rgb(25, 25, 25);
-  font-size: 24px;
-  font-weight: 600;
+  color: #333;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 h3 {

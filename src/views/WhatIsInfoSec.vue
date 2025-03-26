@@ -3,30 +3,28 @@
     <div class="heading">What is Information Security?</div>
 
     <!-- Introduction -->
-    <section class="intro-section">
-      <p>
-        Information Security (InfoSec) is the practice of protecting sensitive
-        data from unauthorized access, leaks, or attacks. It ensures that
-        information remains **confidential, accurate, and available** when
-        needed.
-      </p>
+    <section class="card">
+      <div class="card-content">
+        <p>
+          Information Security (InfoSec) is the practice of protecting sensitive
+          data from unauthorized access, leaks, or attacks. It ensures that
+          information remains
+          <strong>confidential, accurate, and available</strong> when needed.
+        </p>
+      </div>
     </section>
 
     <!-- Core InfoSec Principles -->
     <section class="principles-section">
-      <div class="principles-container">
-        <div
-          class="principle-card"
-          v-for="principle in principles"
-          :key="principle.name"
-        >
+      <div class="card-container">
+        <div class="card" v-for="principle in principles" :key="principle.name">
           <div
             class="icon-container"
             :style="{ backgroundColor: principle.bgLight }"
           >
             <i :class="principle.icon" :style="{ color: principle.bgDark }"></i>
           </div>
-          <div class="principle-content">
+          <div class="card-content">
             <strong>{{ principle.name }}</strong>
             <p>{{ principle.description }}</p>
           </div>
@@ -34,55 +32,12 @@
       </div>
     </section>
 
-    <!-- Common Security Threats -->
-    <section class="threats-section">
-      <div class="threats-container">
-        <div class="threat-card" v-for="threat in threats" :key="threat.name">
-          <div
-            class="icon-container"
-            :style="{ backgroundColor: threat.bgLight }"
-          >
-            <i :class="threat.icon" :style="{ color: threat.bgDark }"></i>
-          </div>
-          <div class="threat-content">
-            <strong>{{ threat.name }}</strong>
-            <p>{{ threat.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Example Scenarios -->
-    <section class="info-scenarios-section">
-      <h2>Real-World Examples</h2>
-
-      <div class="info-example-card">
-        <h3>Confidentiality</h3>
-        <p>
-          Sally confided in her manager about her mother's health condition,
-          expecting it to remain private. However, due to mishandling of
-          sensitive information, the details became widely known at work,
-          violating confidentiality principles.
-        </p>
-      </div>
-
-      <div class="info-example-card">
-        <h3>Integrity</h3>
-        <p>
-          In 2003, an Education Minister blamed a computer virus for incorrect
-          student exam results, demonstrating how data integrity failures can
-          impact institutions and individuals.
-        </p>
-      </div>
-
-      <div class="info-example-card">
-        <h3>Availability</h3>
-        <p>
-          Wolfgang was working on a critical project while traveling. When his
-          laptop was stolen, his encrypted files remained confidential, but
-          since he had no backup, crucial data was lost—causing costly delays
-          and penalties.
-        </p>
+    <section class="scenarios-section">
+      <div class="card-container">
+        <div class="card" v-for="scenario in scenarios" :key="scenario.name">
+          <p>{{ scenario.description }}</p>
+        </div>
       </div>
     </section>
   </div>
@@ -117,28 +72,18 @@ export default {
           bgDark: "#ff9800",
         },
       ],
-      threats: [
+      scenarios: [
         {
-          name: "Phishing Attacks",
-          icon: "fas fa-envelope-open-text",
           description:
-            "Deceptive emails tricking users into revealing information.",
-          bgLight: "#fde3cf",
-          bgDark: "#ff5722",
+            "Sally confided in her manager about her mother's health condition, expecting it to remain private. However, due to mishandling of sensitive information, the details became widely known at work, violating confidentiality principles.",
         },
         {
-          name: "Ransomware",
-          icon: "fas fa-virus",
-          description: "Malware that locks files and demands payment.",
-          bgLight: "#cfe8fd",
-          bgDark: "#007bff",
+          description:
+            "In 2003, an Education Minister blamed a computer virus for incorrect student exam results, demonstrating how data integrity failures can impact institutions and individuals.",
         },
         {
-          name: "Insider Threats",
-          icon: "fas fa-user-shield",
-          description: "Employees or contractors misusing their access.",
-          bgLight: "#d4f5d1",
-          bgDark: "#28c76f",
+          description:
+            "Wolfgang was working on a critical project while traveling. When his laptop was stolen, his encrypted files remained confidential, but since he had no backup, crucial data was lost—causing costly delays and penalties.",
         },
       ],
     };
@@ -147,26 +92,14 @@ export default {
 </script>
 
 <style scoped>
-/* Intro Section */
-.intro-section {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-}
-
-/* Principles & Threats Layout */
-.principles-container,
-.threats-container {
+.card-container {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.principle-card,
-.threat-card {
+.card {
   display: flex;
   font-family: "Inter";
   align-items: center;
@@ -177,8 +110,25 @@ export default {
   flex: 1;
   min-width: 280px;
   transition: all 0.3s ease;
+  margin-bottom: 10px;
 }
 
+.card-content {
+  color: #444;
+}
+
+.card-content strong {
+  font-size: 18px;
+  color: #2d3e50;
+}
+
+.card-content p {
+  font-size: 14px;
+
+  color: #777;
+}
+
+/* Icon Container */
 .icon-container {
   width: 60px;
   height: 60px;
@@ -199,66 +149,20 @@ export default {
   transition: all 0.3s ease;
 }
 
-.principle-content,
-.threat-content {
-  color: #444;
-}
-
-.principle-content strong,
-.threat-content strong {
-  font-size: 18px;
-  color: #2d3e50;
-}
-
-.principle-content p,
-.threat-content p {
-  font-size: 14px;
-  margin-top: 5px;
-  color: #777;
-}
-
-/* Example Scenarios */
-.info-scenarios-section {
-  margin-top: 10px;
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-.info-example-card {
-  background-color: #f9f9f9;
-  padding: 20px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
-.info-example-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.info-example-card p {
+.scenarios-section .card p {
   font-size: 14px;
   color: #555;
   line-height: 1.6;
 }
 
-.threats-section {
-  margin-top: 10px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-  .principles-container,
-  .threats-container {
+  .card-container {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .principle-card,
-  .threat-card {
+  .card {
     min-width: 100%;
   }
 }
