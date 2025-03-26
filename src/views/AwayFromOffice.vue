@@ -41,14 +41,13 @@
     <!-- Story Section with Image -->
     <section class="story-section">
       <div class="card">
-        <div class="story-text">
-          <p v-for="paragraph in story" :key="paragraph">{{ paragraph }}</p>
-        </div>
-
         <!-- Image Placeholder -->
         <div class="story-image-container">
           <!-- Add a photo for the story -->
           <img src="laptop-train.jpg" alt="Story image" class="story-image" />
+        </div>
+        <div class="story-text">
+          <p v-for="paragraph in story" :key="paragraph">{{ paragraph }}</p>
         </div>
       </div>
     </section>

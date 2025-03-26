@@ -1,23 +1,23 @@
 <template>
   <div class="top-card">
-    <!-- Left Section (Search) -->
-    <div class="button-container">
-      <button>Take Test</button>
-    </div>
-
-    <!-- Right Section (Icons & Profile) -->
+    <!-- Left Section (Profile & Icons) -->
     <div class="icon-area">
-      <i class="far fa-calendar-check"></i>
-      <i class="far fa-comment-alt"></i>
-      <i class="far fa-bell notification-icon">
-        <span class="notification-dot"></span>
-      </i>
-
       <!-- Profile Image with Online Indicator -->
       <div class="profile">
         <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="User" />
         <span class="online-indicator"></span>
       </div>
+
+      <i class="far fa-bell notification-icon">
+        <span class="notification-dot"></span>
+      </i>
+      <i class="far fa-comment-alt"></i>
+      <i class="far fa-calendar-check"></i>
+    </div>
+
+    <!-- Right Section (Take Test Button) -->
+    <div class="button-container">
+      <button>Take Test</button>
     </div>
   </div>
 </template>
@@ -45,26 +45,10 @@ export default {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.button-container button {
-  font-family: "Exo 2", sans-serif;
-  padding: 15px;
-  background-color: #28c76f;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.button-container button:focus {
-  outline: none;
-}
-
 .icon-area {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .icon-area i {
@@ -111,6 +95,22 @@ export default {
   bottom: 0px;
   right: 0px;
   border: 2px solid white;
+}
+
+.button-container button {
+  font-family: "Exo 2", sans-serif;
+  padding: 10px 15px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.button-container button:focus {
+  outline: none;
 }
 
 .fa-bars {
