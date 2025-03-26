@@ -107,50 +107,6 @@ export default {
 </script>
 
 <style scoped>
-.card-container {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #ddd;
-  flex: 1;
-  min-width: 280px;
-  transition: all 0.3s ease;
-  margin-bottom: 10px;
-}
-
-.card p {
-  margin: 5px 0;
-}
-
-.icon-container {
-  min-width: 50px;
-  min-height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  margin-right: 10px;
-  transition: all 0.3s ease;
-}
-
-.icon-container:hover {
-  background-color: #eaf1f7;
-}
-
-.icon-container i {
-  font-size: 28px;
-  transition: all 0.3s ease;
-}
-
 .scenarios-section .card p {
   font-size: 14px;
   color: #555;
@@ -183,7 +139,6 @@ export default {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Image Container Styles */
 .image-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

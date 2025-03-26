@@ -14,7 +14,7 @@
         }"
         @click="navigateTo(item)"
       >
-        <div class="icon-container">
+        <div class="sidebar-icon-container">
           <i :class="item.icon"></i>
         </div>
         <span v-if="!collapsed">{{ item.label }}</span>
@@ -202,7 +202,7 @@ export default {
   font-size: 18px;
 }
 
-.icon-container {
+.sidebar-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,7 +210,7 @@ export default {
   height: 30px;
 }
 
-.icon-container i {
+.sidebar-icon-container i {
   font-size: 18px;
 }
 

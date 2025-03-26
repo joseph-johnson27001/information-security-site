@@ -77,14 +77,46 @@ h3 {
   font-size: 18px;
   margin: 5px 0;
   font-weight: 600;
-}
-
-strong {
-  font-family: "Exo 2", sans-serif;
+  margin: 2px 0;
 }
 
 p {
-  font-size: 16px;
-  color: rgb(85, 85, 85);
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 2px 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 10px;
+}
+
+.icon-container {
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+.icon-container i {
+  font-size: 28px;
 }
 </style>
