@@ -62,7 +62,7 @@ export default {
   name: "HandlingInformation",
   data() {
     return {
-      title: "Classifying, Labelling and Handling Information",
+      title: "Handling Information",
       story: [
         "In 2010 a check by a department of a European government revealed that hundreds of documents containing sensitive personal information of thousands of citizens were missing.",
         "Although, the archives ‘lock-up cage’ contained the correct number of boxes of papers many incorrectly contained non-sensitive information that should have been disposed of months previously.",
