@@ -80,11 +80,17 @@ h3 {
   margin: 2px 0;
 }
 
-p {
+p,
+ul {
   font-size: 14px;
   color: #555;
   line-height: 1.6;
-  margin: 2px 0;
+  margin: 4px 0;
+}
+
+li {
+  list-style: none;
+  margin-left: -30px;
 }
 
 .card-container {
@@ -100,9 +106,9 @@ p {
 
 .card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background: #ffffff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 12px;
   border: 1px solid #ddd;
   flex: 1;

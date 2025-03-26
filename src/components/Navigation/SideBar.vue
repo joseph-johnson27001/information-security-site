@@ -158,6 +158,7 @@ export default {
 
 .sidebar ul li {
   padding: 15px 10px;
+  color: white;
   cursor: pointer;
   border-radius: 5px;
   margin: 4px 7px;
