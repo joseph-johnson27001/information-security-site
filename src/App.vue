@@ -2,10 +2,8 @@
   <div id="app">
     <SideBar />
     <div id="main">
-      <!-- <TopNav /> -->
-      <TopCard />
-
       <div class="content">
+        <TopCard />
         <router-view></router-view>
       </div>
     </div>
@@ -14,14 +12,12 @@
 
 <script>
 import SideBar from "./components/Navigation/SideBar.vue";
-// import TopNav from "./components/Navigation/TopNav.vue";
 import TopCard from "./components/UI/TopCard.vue";
 
 export default {
   name: "App",
   components: {
     SideBar,
-    // TopNav,
     TopCard,
   },
 };
@@ -30,7 +26,7 @@ export default {
 <style>
 body {
   margin: 0;
-  font-family: "Assistant";
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scrollbar-width: none;
   overflow-y: hidden;
 }
@@ -50,30 +46,40 @@ body {
 #main {
   flex-grow: 1;
   width: 100%;
-  padding: 15px;
-  margin-bottom: 65px;
 }
 
 .content {
-  font-family: "Inter";
+  padding: 20px;
   width: 100%;
   height: 100%;
   color: rgb(25, 25, 25);
   overflow-y: scroll;
   box-sizing: border-box;
-  background-color: #fff;
-  padding: 20px;
   border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  margin-top: 10px;
 }
 
 .heading {
   font-family: "Inter";
-  color: rgb(255, 87, 34);
+  color: #333;
   font-size: 30px;
   font-weight: 700px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Inter";
+  color: rgb(25, 25, 25);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Inter";
+  font-size: 20px;
+  color: rgb(25, 25, 25);
+  margin-bottom: 10px;
 }
 
 p {

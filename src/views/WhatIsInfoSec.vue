@@ -36,9 +36,6 @@
 
     <!-- Common Security Threats -->
     <section class="threats-section">
-      <p>
-        Every organization faces risks. Here are a few threats to be aware of:
-      </p>
       <div class="threats-container">
         <div class="threat-card" v-for="threat in threats" :key="threat.name">
           <div
@@ -150,91 +147,119 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #333;
+/* Intro Section */
+.intro-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
 }
 
 /* Principles & Threats Layout */
 .principles-container,
 .threats-container {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .principle-card,
 .threat-card {
   display: flex;
+  font-family: "Inter";
   align-items: center;
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
   flex: 1;
-  min-width: 250px;
+  min-width: 280px;
+  transition: all 0.3s ease;
 }
 
-/* Icon Containers */
 .icon-container {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
+  border-radius: 12px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.icon-container:hover {
+  background-color: #eaf1f7;
 }
 
 .icon-container i {
-  font-size: 24px;
+  font-size: 28px;
+  transition: all 0.3s ease;
 }
 
-/* Content */
 .principle-content,
 .threat-content {
-  margin-left: 15px;
+  color: #444;
 }
 
 .principle-content strong,
 .threat-content strong {
-  font-size: 16px;
+  font-size: 18px;
+  color: #2d3e50;
 }
 
 .principle-content p,
 .threat-content p {
   font-size: 14px;
-  color: #666;
-  margin: 5px 0 0;
+  margin-top: 5px;
+  color: #777;
 }
 
-/* Quick Tips */
-.tips-list,
-.responsibilities-list {
-  list-style: none;
-  padding: 0;
+/* Example Scenarios */
+.info-scenarios-section {
+  margin-top: 10px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }
 
-.tips-list li,
-.responsibilities-list li {
-  margin: 8px 0;
+.info-example-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.info-example-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-example-card p {
   font-size: 14px;
-  display: flex;
-  align-items: center;
+  color: #555;
+  line-height: 1.6;
 }
 
-.tips-list i,
-.responsibilities-list i {
-  margin-right: 10px;
-  color: #28c76f;
+.threats-section {
+  margin-top: 10px;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   .principles-container,
   .threats-container {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .principle-card,
+  .threat-card {
+    min-width: 100%;
   }
 }
 </style>
