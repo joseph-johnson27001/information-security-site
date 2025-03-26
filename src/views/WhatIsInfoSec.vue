@@ -124,7 +124,6 @@ export default {
   border-radius: 12px;
   border: 1px solid #ddd;
   flex: 1;
-  min-width: 280px;
   transition: all 0.3s ease;
   margin-bottom: 10px;
 }
@@ -154,14 +153,6 @@ export default {
   .card-container {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .card {
-    min-width: 100%;
-  }
-
-  .scenario-card {
-    min-width: 100%;
   }
 }
 </style>
