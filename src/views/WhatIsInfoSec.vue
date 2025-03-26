@@ -45,13 +45,8 @@
           v-for="scenario in scenarios"
           :key="scenario.description"
         >
-          <!-- Adding random images to the scenario cards -->
           <div class="scenario-image-container">
-            <img
-              :src="scenario.image"
-              alt="Random Image"
-              class="scenario-image"
-            />
+            <img :src="scenario.image" alt="Image" class="scenario-image" />
           </div>
 
           <div class="card-content">

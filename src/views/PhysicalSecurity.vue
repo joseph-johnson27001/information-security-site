@@ -44,11 +44,7 @@
           :key="scenario.description"
         >
           <div class="scenario-image-container">
-            <img
-              :src="scenario.image"
-              alt="Random Image"
-              class="scenario-image"
-            />
+            <img :src="scenario.image" alt="Image" class="scenario-image" />
           </div>
           <div class="card-content">
             <p>{{ scenario.description }}</p>
