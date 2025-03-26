@@ -109,17 +109,17 @@ export default {
         {
           description:
             "In 2010, a journalist gained unauthorized access to a UK government agency by tailgating and was left unchallenged for over an hour. He was only confronted when he started taking photographs.",
-          image: "woman-talking.avif",
+          image: "security-pass.jpg",
         },
         {
           description:
             "Employees must ensure that visitor passes are always returned to reception and that guests are never left unattended.",
-          image: "exam-results.jpg",
+          image: "office.jpg",
         },
         {
           description:
             "Never allow unauthorized personnel to enter secured areas. Always check for proper identification.",
-          image: "laptop-train.jpg",
+          image: "security-guard.jpg",
         },
       ],
     };
