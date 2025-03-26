@@ -81,8 +81,7 @@ h3 {
 }
 
 p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: #555;
   line-height: 1.6;
   margin: 2px 0;

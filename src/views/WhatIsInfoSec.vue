@@ -37,13 +37,13 @@
       <div class="card-container">
         <div
           class="card scenario-card"
-          v-for="(scenario, index) in scenarios"
+          v-for="scenario in scenarios"
           :key="scenario.description"
         >
           <!-- Adding random images to the scenario cards -->
           <div class="scenario-image-container">
             <img
-              :src="`https://picsum.photos/500/300?random=${index}`"
+              :src="scenario.image"
               alt="Random Image"
               class="scenario-image"
             />
@@ -91,14 +91,17 @@ export default {
         {
           description:
             "Sally confided in her manager about her mother's health condition, expecting it to remain private. However, due to mishandling of sensitive information, the details became widely known at work, violating confidentiality principles.",
+          image: "woman-talking.avif",
         },
         {
           description:
             "In 2003, an Education Minister blamed a computer virus for incorrect student exam results, demonstrating how data integrity failures can impact institutions and individuals.",
+          image: "exam-results.jpg",
         },
         {
           description:
             "Wolfgang was working on a critical project while traveling. When his laptop was stolen, his encrypted files remained confidential, but since he had no backup, crucial data was lost—causing costly delays and penalties.",
+          image: "laptop-train.jpg",
         },
       ],
     };
@@ -128,13 +131,12 @@ export default {
 
 .scenario-image-container {
   width: 100%;
-  max-width: 500px;
   margin-bottom: 15px;
 }
 
 .scenario-image {
   width: 100%;
-  height: auto;
+  height: 250px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
