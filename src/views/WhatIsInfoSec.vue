@@ -113,21 +113,6 @@ export default {
   margin-bottom: 10px;
 }
 
-.card-content {
-  color: #444;
-}
-
-.card-content strong {
-  font-size: 18px;
-  color: #2d3e50;
-}
-
-.card-content p {
-  font-size: 14px;
-
-  color: #777;
-}
-
 /* Icon Container */
 .icon-container {
   width: 60px;

@@ -66,14 +66,14 @@ body {
 }
 
 h2 {
-  font-family: "Inter";
+  font-family: "Assistant";
   color: #333;
   font-size: 22px;
   font-weight: 400;
 }
 
 h3 {
-  font-family: "Inter";
+  font-family: "Assistant";
   font-size: 20px;
   color: rgb(25, 25, 25);
   margin-bottom: 10px;
