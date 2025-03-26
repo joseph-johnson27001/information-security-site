@@ -88,10 +88,14 @@ p {
 }
 
 .card-container {
-  display: flex;
+  display: grid;
   gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.intro-card-container {
+  margin-bottom: 10px;
 }
 
 .card {
@@ -103,7 +107,6 @@ p {
   border: 1px solid #ddd;
   flex: 1;
   min-width: 280px;
-  margin-bottom: 10px;
 }
 
 .icon-container {

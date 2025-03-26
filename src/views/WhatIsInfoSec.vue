@@ -3,14 +3,19 @@
     <div class="heading">What is Information Security?</div>
 
     <!-- Introduction -->
-    <section class="card">
-      <div class="card-content">
-        <p>
-          Information Security (InfoSec) is the practice of protecting sensitive
-          data from unauthorized access, leaks, or attacks. It ensures that
-          information remains
-          <strong>confidential, accurate, and available</strong> when needed.
-        </p>
+    <section class="intro-section">
+      <div class="intro-card-container">
+        <div class="card">
+          <div class="card-content">
+            <p>
+              Information Security (InfoSec) is the practice of protecting
+              sensitive data from unauthorized access, leaks, or attacks. It
+              ensures that information remains
+              <strong>confidential, accurate, and available</strong> when
+              needed.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -110,10 +115,8 @@ export default {
 </script>
 
 <style scoped>
-.scenarios-section .card p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
+.card-container {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .scenario-card {
@@ -125,7 +128,6 @@ export default {
   border: 1px solid #ddd;
   flex: 1;
   transition: all 0.3s ease;
-  margin-bottom: 10px;
 }
 
 .scenario-image-container {
@@ -149,10 +151,9 @@ export default {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .card-container {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: 1fr;
   }
 }
 </style>
