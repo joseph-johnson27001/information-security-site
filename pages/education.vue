@@ -75,6 +75,26 @@
           It’s designed for beginners and lays the foundation for further
           studies in security engineering, network defense, and ethical hacking.
         </p>
+        <p class="course-description">
+          This course introduces the core principles of cybersecurity, including
+          threat modeling, basic cryptography, risk management, and how to think
+          like a defender and an attacker. You'll learn how modern cyber threats
+          work and how systems are designed to prevent or mitigate them.
+        </p>
+        <p class="course-description">
+          It’s designed for beginners and lays the foundation for further
+          studies in security engineering, network defense, and ethical hacking.
+        </p>
+        <p class="course-description">
+          This course introduces the core principles of cybersecurity, including
+          threat modeling, basic cryptography, risk management, and how to think
+          like a defender and an attacker. You'll learn how modern cyber threats
+          work and how systems are designed to prevent or mitigate them.
+        </p>
+        <p class="course-description">
+          It’s designed for beginners and lays the foundation for further
+          studies in security engineering, network defense, and ethical hacking.
+        </p>
       </div>
     </div>
   </div>

@@ -46,7 +46,7 @@ const sidebarItems = [
 }
 
 .sidebar {
-  width: 70px;
+  width: 65px;
   background-color: #223038;
   color: white;
   display: flex;
