@@ -1,1 +1,1 @@
-<template>HELLO WORLD</template>
+<template>HOME PAGE</template>

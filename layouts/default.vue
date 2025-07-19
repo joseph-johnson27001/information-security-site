@@ -31,8 +31,8 @@ const sidebarItems = [
   { icon: "fa-home", label: "Home", route: "/" },
   { icon: "fa-book", label: "Education", route: "/education" },
   { icon: "fa-pen-nib", label: "Exam", route: "/exam" },
-  { icon: "fa-cog", label: "Settings", route: "/settings" },
   { icon: "fa-info-circle", label: "About", route: "/about" },
+  { icon: "fa-cog", label: "Settings", route: "/settings" },
 ];
 </script>
 
@@ -46,7 +46,7 @@ const sidebarItems = [
 }
 
 .sidebar {
-  width: 65px;
+  width: 70px;
   background-color: #223038;
   color: white;
   display: flex;
@@ -54,7 +54,7 @@ const sidebarItems = [
   align-items: center;
   padding-top: 10px;
   gap: 35px;
-  font-family: "Inter", "Roboto", system-ui, sans-serif;
+  font-family: "Assistant", system-ui, sans-serif;
 }
 
 .sidebar-item {
@@ -78,6 +78,7 @@ const sidebarItems = [
   width: 45px;
   height: 45px;
   object-fit: contain;
+  margin-bottom: -10px;
 }
 
 .label {
