@@ -88,6 +88,5 @@ const sidebarItems = [
 .content {
   flex: 1;
   background-color: #fff;
-  padding: 20px;
 }
 </style>

@@ -10,7 +10,8 @@ body {
   height: 100%;
 }
 
-body {
-  font-family: "Inter", "Roboto", system-ui, sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
 }
 </style>
