@@ -181,6 +181,7 @@ const filteredCourses = computed(() => {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .courses-scroll {
