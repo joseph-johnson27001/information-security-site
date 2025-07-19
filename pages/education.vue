@@ -54,30 +54,72 @@ const selectedFilter = ref("All");
 const courses = ref([
   {
     id: 1,
-    title: "Math 101",
-    description: "Introductory algebra, geometry, and more.",
-    image: "/images/math.jpg",
+    title: "Introduction to Cybersecurity",
+    description: "Fundamentals of cybersecurity principles and practices.",
+    image: "https://picsum.photos/400/300?random=1",
     status: "Active",
   },
   {
     id: 2,
-    title: "World History",
-    description: "Historical events and cultures worldwide.",
-    image: "/images/history.jpg",
+    title: "Network Security",
+    description: "Protecting networks from attacks and vulnerabilities.",
+    image: "https://picsum.photos/400/300?random=2",
     status: "Completed",
   },
   {
     id: 3,
-    title: "Biology Basics",
-    description: "The building blocks of life.",
-    image: "/images/biology.jpg",
+    title: "Cryptography Basics",
+    description: "Understanding encryption, hashing, and digital signatures.",
+    image: "https://picsum.photos/400/300?random=3",
     status: "Active",
   },
   {
     id: 4,
-    title: "Art & Creativity",
-    description: "Unlock creative potential through art.",
-    image: "/images/art.jpg",
+    title: "Ethical Hacking",
+    description: "Techniques to identify and fix security weaknesses.",
+    image: "https://picsum.photos/400/300?random=4",
+    status: "Completed",
+  },
+  {
+    id: 5,
+    title: "Incident Response",
+    description: "How to respond effectively to security breaches.",
+    image: "https://picsum.photos/400/300?random=5",
+    status: "Active",
+  },
+  {
+    id: 6,
+    title: "Security Compliance & Auditing",
+    description: "Ensuring systems meet regulatory and policy standards.",
+    image: "https://picsum.photos/400/300?random=6",
+    status: "Completed",
+  },
+  {
+    id: 7,
+    title: "Cloud Security",
+    description: "Protecting data and applications in cloud environments.",
+    image: "https://picsum.photos/400/300?random=7",
+    status: "Active",
+  },
+  {
+    id: 8,
+    title: "Malware Analysis",
+    description: "Detecting and analyzing malicious software threats.",
+    image: "https://picsum.photos/400/300?random=8",
+    status: "Completed",
+  },
+  {
+    id: 9,
+    title: "Identity and Access Management",
+    description: "Controlling user access to systems and data securely.",
+    image: "https://picsum.photos/400/300?random=9",
+    status: "Active",
+  },
+  {
+    id: 10,
+    title: "Penetration Testing",
+    description: "Simulated attacks to test system security robustness.",
+    image: "https://picsum.photos/400/300?random=10",
     status: "Completed",
   },
 ]);
@@ -97,9 +139,9 @@ const filteredCourses = computed(() => {
 }
 
 .left-panel {
-  width: 400px;
+  width: 500px;
   background-color: #f9f9f9;
-  padding: 20px;
+  padding: 0px 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -148,8 +190,9 @@ const filteredCourses = computed(() => {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 20px;
+  padding: 0 20px;
 }
+
 .content-scroll {
   overflow-y: scroll;
   flex-grow: 1;
@@ -159,5 +202,16 @@ const filteredCourses = computed(() => {
 
 .content-scroll::-webkit-scrollbar {
   display: none;
+}
+
+.courses-scroll {
+  overflow-y: auto;
+  flex-grow: 1;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.courses-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 </style>

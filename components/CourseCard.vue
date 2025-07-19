@@ -35,11 +35,13 @@ defineProps({
 }
 
 .course-image {
-  width: 120px;
+  width: 150px;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
   flex-shrink: 0;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .card-content {
