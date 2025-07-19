@@ -9,4 +9,8 @@ body {
   padding: 0;
   height: 100%;
 }
+
+body {
+  font-family: "Inter", "Roboto", system-ui, sans-serif;
+}
 </style>
