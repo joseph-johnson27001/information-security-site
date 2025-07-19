@@ -29,13 +29,13 @@ defineProps({
   display: flex;
   background-color: white;
   border-radius: 8px;
-  padding: 10px;
-  gap: 10px;
+  padding: 10px 5px;
+  gap: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .course-image {
-  width: 80px;
+  width: 120px;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
@@ -51,13 +51,14 @@ defineProps({
 .course-title {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
+  margin-top: 5px;
 }
 
 .course-description {
   font-size: 14px;
   color: #555;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .course-status {
