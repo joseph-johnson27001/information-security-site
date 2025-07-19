@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/png",
-          href: "/dashboard-logo.png",
+          href: "dashboard-logo.png",
         },
       ],
     },

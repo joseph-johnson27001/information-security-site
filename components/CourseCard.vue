@@ -32,6 +32,8 @@ defineProps({
   padding: 10px 5px;
   gap: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s linear;
 }
 
 .course-image {
@@ -42,6 +44,7 @@ defineProps({
   flex-shrink: 0;
   padding: 5px;
   border-radius: 10px;
+  margin-right: 5px;
 }
 
 .card-content {

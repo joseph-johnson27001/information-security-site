@@ -29,16 +29,52 @@
     <!-- Right: Dynamic Content -->
     <div class="right-panel">
       <div class="content-scroll">
-        <h2>Selected Course Content</h2>
-        <p>
-          This is where detailed content about the selected course will appear.
+        <img
+          src="https://picsum.photos/1600/500?random=100"
+          alt="Course Header"
+          class="content-image"
+        />
+        <h2 class="course-title">Introduction to Cybersecurity</h2>
+        <p class="course-description">
+          This course introduces the core principles of cybersecurity, including
+          threat modeling, basic cryptography, risk management, and how to think
+          like a defender and an attacker. You'll learn how modern cyber threats
+          work and how systems are designed to prevent or mitigate them.
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>
-          Aliquam luctus, velit sit amet aliquam facilisis, magna neque faucibus
-          arcu.
+        <p class="course-description">
+          It’s designed for beginners and lays the foundation for further
+          studies in security engineering, network defense, and ethical hacking.
         </p>
-        <p v-for="i in 20" :key="i">More filler content line {{ i }}...</p>
+        <p class="course-description">
+          This course introduces the core principles of cybersecurity, including
+          threat modeling, basic cryptography, risk management, and how to think
+          like a defender and an attacker. You'll learn how modern cyber threats
+          work and how systems are designed to prevent or mitigate them.
+        </p>
+        <p class="course-description">
+          It’s designed for beginners and lays the foundation for further
+          studies in security engineering, network defense, and ethical hacking.
+        </p>
+        <p class="course-description">
+          This course introduces the core principles of cybersecurity, including
+          threat modeling, basic cryptography, risk management, and how to think
+          like a defender and an attacker. You'll learn how modern cyber threats
+          work and how systems are designed to prevent or mitigate them.
+        </p>
+        <p class="course-description">
+          It’s designed for beginners and lays the foundation for further
+          studies in security engineering, network defense, and ethical hacking.
+        </p>
+        <p class="course-description">
+          This course introduces the core principles of cybersecurity, including
+          threat modeling, basic cryptography, risk management, and how to think
+          like a defender and an attacker. You'll learn how modern cyber threats
+          work and how systems are designed to prevent or mitigate them.
+        </p>
+        <p class="course-description">
+          It’s designed for beginners and lays the foundation for further
+          studies in security engineering, network defense, and ethical hacking.
+        </p>
       </div>
     </div>
   </div>
@@ -139,7 +175,7 @@ const filteredCourses = computed(() => {
 }
 
 .left-panel {
-  width: 500px;
+  min-width: 450px;
   background-color: #f9f9f9;
   padding: 0px 20px;
   overflow: hidden;
@@ -213,5 +249,27 @@ const filteredCourses = computed(() => {
 
 .courses-scroll::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+}
+
+.content-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.course-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.course-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #444;
 }
 </style>
